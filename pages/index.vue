@@ -1,50 +1,48 @@
-<template>
-  <div class="container">
-    <BackLine />
-  </div>
+<template lang="pug">
+  .c-pageContainer
+    .c-pageContainer__inner
+      h1.c-pageContainer__title Links
+      ul.links
+        li.links__child
+          nuxt-link(to="/linewave") linewave
+        li.links__child
+          nuxt-link(to="/linewave") linewave
+        li.links__child
+          nuxt-link(to="/linewave") linewave
+        li.links__child
+          nuxt-link(to="/linewave") linewave
 </template>
 
 <script>
-export default {}
+export default {
+  mounted() {},
+  methods: {}
+}
 </script>
 
-<style>
-.container {
+<style lang="scss" scoped>
+.c-pageContainer {
   margin: 0 auto;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
 
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
+  &__inner {
+    width: 500px;
+    margin: 0 auto
+  }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+  &__title {
+    margin: 0;
+    padding: 30px 0;
+  }
 }
 
 .links {
-  padding-top: 15px;
+  &__child {
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 </style>

@@ -34,9 +34,22 @@ export default {
   buildModules: [
   ],
 
+  css: [
+    'normalize.css',
+    '@/assets/scss/reset.scss'
+  ],
+
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/style-resources'
   ],
+
+  styleResources: {
+    scss: [
+      '@/assets/scss/variable.scss',
+      '@/assets/scss/mixin.scss'
+    ]
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

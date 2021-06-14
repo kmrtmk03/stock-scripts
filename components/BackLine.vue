@@ -91,7 +91,7 @@ export default {
       ]
 
       bezier
-        .lineStyle(3, 0xff0000)
+        .lineStyle(3, 0xffffff)
         .bezierCurveTo(
           bezierPos[1].x,
           bezierPos[1].y,
@@ -136,7 +136,7 @@ export default {
 
     CreateLine(_startX, _startY, _endX, _endY) {
       const g = new PIXI.Graphics()
-        .lineStyle(1, 0xff0000)
+        .lineStyle(1, 0xffff00)
         .moveTo(_startX, _startY)
         .lineTo(_endX, _endY)
 
