@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <LinkHome />
     <BackLine />
   </div>
 </template>
