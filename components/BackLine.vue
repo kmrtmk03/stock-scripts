@@ -1,5 +1,5 @@
 <template lang="pug">
-  .c-line
+  .c-line(ref='cLine')
     .lineCanvas(ref='lineCanvas')
 </template>
 
@@ -41,10 +41,9 @@ export default {
   mounted() {
     this.InitCanvas()
 
-    window.addEventListener('wheel', (e) => {
+    this.$refs.cLine.addEventListener('wheel', (e) => {
       this.scrollAmount += e.deltaY / 1000
       this.MyAnim()
-      console.log("Hello")
     })
   },
 

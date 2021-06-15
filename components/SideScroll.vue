@@ -1,5 +1,5 @@
 <template lang="pug">
-  .c-test
+  .c-test(ref="cCanvas")
     .canvasWrap(ref='canvas')
 </template>
 
@@ -43,7 +43,7 @@ export default {
 
     this.InitPixi()
 
-    window.addEventListener('wheel', (e) => {
+    this.$refs.cCanvas.addEventListener('wheel', (e) => {
       this.ActionScroll(e)
     })
   },

@@ -1,16 +1,12 @@
 <template lang="pug">
   .c-pageContainer
     .c-pageContainer__inner
-      h1.c-pageContainer__title Links
+      h1.c-pageContainer__title Scripts Stock
       ul.links
         li.links__child
           nuxt-link(to="/linewave") linewave
         li.links__child
-          nuxt-link(to="/linewave") linewave
-        li.links__child
-          nuxt-link(to="/linewave") linewave
-        li.links__child
-          nuxt-link(to="/linewave") linewave
+          nuxt-link(to="/sidescroll") sidescroll
 </template>
 
 <script>
