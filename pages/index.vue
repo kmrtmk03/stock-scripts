@@ -11,6 +11,7 @@
 
 <script>
 export default {
+  //スカッシュマージのテスト2
   mounted() {},
   methods: {}
 }

@@ -6,6 +6,7 @@
 </template>
 
 <script>
+//スカッシュマージのテスト2
 export default {
   mounted() {
     this.ScrollNotArrow()
